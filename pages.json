@@ -1,0 +1,101 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "懒人自媒体"
+			}
+		}
+		,{
+		    "path" : "pages/public/login",
+		    "style" :                                                                                    
+		    {
+				// 隐藏导航栏
+				"app-plus":{
+						"titleNView":false
+				},
+		        "navigationBarTitleText": "用户登录",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{
+		    "path" : "pages/public/register",
+		    "style" :                                                                                    
+		    {
+				// 隐藏导航栏
+				"app-plus":{
+						"titleNView":false
+				},
+		        "navigationBarTitleText": "用户注册",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+	    ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/video/list",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "视频列表",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/kefu/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "联系客服",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"color": "#999999",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"selectedColor": "#FA436A",
+		// "fontSize":"24rpx",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tab-home.png",
+				"selectedIconPath": "static/tab-home-current.png",
+				"text": "主页"
+			},
+		{
+				"pagePath": "pages/video/list",
+				"iconPath": "static/video.png",
+				"selectedIconPath": "static/video_cure.png",
+				"text": "我的视频"
+			},
+			{
+					"pagePath": "pages/kefu/index",
+					"iconPath": "static/kefu.png",
+					"selectedIconPath": "static/kefu_cure.png",
+					"text": "联系客服"
+				},
+			{
+				"pagePath": "pages/user/user",
+				 "iconPath": "static/tab-my.png",
+				"selectedIconPath": "static/tab-my-current.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
